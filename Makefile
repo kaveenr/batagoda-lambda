@@ -2,7 +2,7 @@
 
 build:
 	env GOOS=linux go build -ldflags="-s -w" -o bin/handler webhook/handler.go
-
+	chmod +x bin/handler
 clean:
 	rm -rf ./bin
 
